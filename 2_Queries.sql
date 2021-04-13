@@ -37,8 +37,9 @@ SELECT COUNT(code) FROM towns;
 
 -- Question 1: How many official languages are there?
 -- Table: countrylanguage
-SELECT COUNT(isofficial) from countrylanguage;
---984
+SELECT COUNT(language) FROM countrylanguage where isofficial=true;
+
+--238
 
 -- Question 2: What is the average life expectancy in the world?
 -- Table: country
