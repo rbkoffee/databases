@@ -50,3 +50,7 @@ SELECT AVG(lifeexpectancy) from country;
 -- Table: city
 SELECT AVG(population) from city WHERE countrycode = 'NLD';
 -- 185001.75
+
+-- Using Negations
+-- How many customers are not 55 
+SELECT COUNT(customerid) FROM customers where NOT age = 55;
