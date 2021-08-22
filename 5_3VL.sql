@@ -27,7 +27,9 @@ WHERE COALESCE(address2, null) IS NOT null;
 SELECT coalesce(lastName, 'Empty'), * from customers
 where (age = null);
 
-// This returns results.
+SELECT coalesce(lastname, 'Empty'), * from customers where (age IS NOT null);
 
-// This is what they wanted, but returns nothing.
+/* This returns results. ^^
+* This is what they wanted, but returns nothing. vv 
+*/
 SELECT coalesce(lastname, 'Empty'), * from customers where (age IS null);
