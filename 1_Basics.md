@@ -38,3 +38,8 @@ Keys:
 
 * Primary (PKEY): Attribute that uniquely identifies all records in table.
 * Foreign (FKEY): PKEY of a related table used to create relations between tables.
+
+## OLAP -v- OLTP
+
+Online Analytical Processing - Data Lake/Warehouse with large dataset used to show trens in data etc.
+Online Transaction Processing - BAU Function driven, transactional data, Microservice datastore for working dataset.
